@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+body{
+    background-image: url(../imagenes/SmashWallpaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.main_container{
+    border: 5px solid #0817eb;
+    border-radius: 25px;
+    margin: 3rem;
+    background-color: rgba(0, 255, 255, 0.315);
+    box-shadow: 5px 5px 30px blue;
+}
+
+aside{
+    width: 25%;
+    height: 40%;
+    display: inline-block;
+}
+
+@keyframes animacion{
+    from{
+        background-color: rgba(0, 255, 255, 0.315);
+    }
+    to{
+        background-color: rgba(0, 255, 255, 0.747);
+    }
+}
+
+.main_container{
+    background-color: rgba(0, 255, 255, 0.315);
+    animation: animacion 4s alternate infinite;
+}
