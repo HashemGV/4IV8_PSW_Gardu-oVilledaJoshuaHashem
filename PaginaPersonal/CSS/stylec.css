@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url(../imagenes/finaldestination.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@keyframes animacion{
+    from{
+        background-color: rgba(0, 255, 255, 0.315);
+    }
+    to{
+        background-color: rgba(0, 255, 255, 0.747);
+    }
+}
+
+
+.content{
+    border: 5px solid #0817eb;
+    border-radius: 25px;
+    margin: 3rem;
+    background-color: rgba(0, 255, 255, 0.315);
+    box-shadow: 5px 5px 30px blue;
+    background-color: rgba(0, 255, 255, 0.315);
+    animation: animacion 4s alternate infinite;
+}
+
+nav{
+    text-align: center;
+}
+
+td{
+    text-align: center;
+    font-size: larger;
+}
+
+h2{
+    text-align: center;
+}
