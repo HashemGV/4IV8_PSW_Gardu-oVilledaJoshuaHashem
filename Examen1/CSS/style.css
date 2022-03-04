@@ -1,0 +1,18 @@
+div{
+    text-align: center;
+    margin: 50px;
+}
+input{
+    border: 1px solid black;
+    margin-right: 20px;
+    height: 30px;
+}
+table{
+    border: 1px solid black;
+    width: 500px;
+    margin: auto;
+}
+th,td{
+    border: 1px solid black;
+    text-align: center;
+}
