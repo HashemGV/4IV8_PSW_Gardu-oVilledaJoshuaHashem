@@ -6,25 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabla</title>
     <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="JavaSript/validacion.js">
+    <script src="JavaScript/validacion.js"></script>
 </head>
 <body>
-    <div>
-        <input type="text" id="id" placeholder="Ingrese el número">
-        <input type="text" id="name" placeholder="Escriba su nombre">
-        <input type="text" id="sex" placeholder="Ingrese el género">
+    <div class="formulario">
+        <input type="text" id="capital" placeholder="Capital">
+        <input type="text" id="interes" placeholder="Interes Mensual">
+        <input type="text" id="plazo" placeholder="Plazo en Meses">
         <input type="button" id="add" value="Añadir">
     </div>
-    <table>
-        <caption>
-            Formulario de información del estudiante
-        </caption>
-        <tr>
-            <th>Numeración</th>
-            <th>Nombre</th>
-            <th>Género</th>
-            <th>Operando</th>
-        </tr>
-    </table>
+    <div class="tabla">
+        <table>
+            <caption>
+                Interes Compuesto
+            </caption>
+            <tr>
+                <td>Capital</td>
+                <td>Periodo</td>
+                <td>Interes</td>
+                <td>Amortizacion</td>
+            </tr>
+        </table>
+    </div>
+    <div class="pie">
+        <footer>
+            <h3>Garduño Villeda Joshua Hashem | 4IV8 | 2021090540</h3>
+        </footer>
+    </div>
 </body>
 </html>

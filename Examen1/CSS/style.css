@@ -2,17 +2,25 @@ div{
     text-align: center;
     margin: 50px;
 }
+
 input{
     border: 1px solid black;
     margin-right: 20px;
     height: 30px;
+    background-color: rgb(255, 243, 77);
 }
+
 table{
     border: 1px solid black;
     width: 500px;
     margin: auto;
+    background-color: rgb(94, 241, 143);
 }
+
 th,td{
     border: 1px solid black;
     text-align: center;
+}
+html, body{
+    background-color: rgb(146, 252, 238);
 }
