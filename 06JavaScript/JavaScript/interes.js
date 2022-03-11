@@ -16,3 +16,8 @@ function interes(){
     var total = resul+interes;
     document.formulario1.sueldoI.value = "$" + total;
 }
+
+function borrar(){
+    document.formulario1.sueldoI.value="";
+    
+}
