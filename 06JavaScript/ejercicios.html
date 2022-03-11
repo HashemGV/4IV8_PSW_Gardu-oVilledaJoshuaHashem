@@ -14,12 +14,12 @@
         <table>
             <tr>
                 <td>Introduce la cantidad a invertir:</td>
-                <td><input type="text" name="Cantidad" onkeypress=""></td>
+                <td><input type="text" name="Cantidad" onKeypress="return validarn(event)"></td>
             </tr>
             <tr>
                 <td></td>
                 <td>
-                    <input type="button" value="Interes" onclick="interes()">
+                    <input type="button" value="Interes" onClick="interes()">
                 </td>
             </tr>
             <tr>
@@ -30,7 +30,7 @@
             </tr>
             <tr>
                 <td></td>
-                <td><input type="button" name="borrar" value="Borrar Datos" onclick="borrar()"></td>
+                <td><input type="button" name="borrar" value="Borrar Datos" onClick="borrar()"></td>
             </tr>
         </table>
     </form>
