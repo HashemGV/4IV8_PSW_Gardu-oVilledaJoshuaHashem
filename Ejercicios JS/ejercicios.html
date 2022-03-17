@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios JavaScript</title>
+</head>
+<body>
+    <div class="e1">
+        <form method="post" name="ejercicio1" action="">
+           <table>
+               <tr>
+                   <td>Introduce la cantidad que deseas invertir: </td>
+                   <td><input type="text" name="cantidad" onkeypress="return validar(event)"></td>
+               </tr>
+               <tr>
+                   <td></td>
+                   <td><input type="button" value="Calcular interes" onclick="interes()"></td>
+               </tr>
+               <tr>
+                   <td>Su saldo total despues de un mes sera: </td>
+                   <td><input type="text" name="sueldoI" id="cantidadI" readonly="readonly" class="input_text"></td>
+               </tr>
+               <tr>
+                   <td></td>
+                   <td><input type="button" value="Borrar Datos" name="borrar" onclick="borrar()"></td>
+               </tr>
+           </table>
+        </form>
+    </div>
+    <script src="JavaScript/script.js"></script>
+</body>
+</html>
