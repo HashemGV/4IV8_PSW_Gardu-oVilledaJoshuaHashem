@@ -7,26 +7,68 @@
     <title>Ejercicios JavaScript</title>
 </head>
 <body>
-    <div class="e1">
-        <form method="post" name="ejercicio1" action="">
-           <table>
-               <tr>
-                   <td>Introduce la cantidad que deseas invertir: </td>
-                   <td><input type="text" name="cantidad" onkeypress="return validar(event)"></td>
-               </tr>
-               <tr>
-                   <td></td>
-                   <td><input type="button" value="Calcular interes" onclick="interes()"></td>
-               </tr>
-               <tr>
-                   <td>Su saldo total despues de un mes sera: </td>
-                   <td><input type="text" name="sueldoI" id="cantidadI" readonly="readonly" class="input_text"></td>
-               </tr>
-               <tr>
-                   <td></td>
-                   <td><input type="button" value="Borrar Datos" name="borrar" onclick="borrar()"></td>
-               </tr>
-           </table>
+    <div class="f1">
+        <form method="post" name="formulario1" action="">
+            <label>
+                <h2>
+                    Ejercicio 1: Calculo de interes con 2% de razon mensual.
+                </h2>
+            </label>
+            <table>
+                <tr>
+                    <td>Introduce la cantidad a invertir: </td>
+                    <td> <input type="text" name="cantidad" onkeypress="return validar(event)"> </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td> <input type="button" value="Calcular Interes" onclick="interes()"> </td>
+                </tr>
+                <tr>
+                    <td>Su saldo total con el interes de 2% es:</td>
+                    <td> <input type="text" name="sueldoI" id="cantidadI" readonly="readonly" class="input_text"> </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" value="Borrar Datos" name="borrar" onclick="borrard()"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div class="f2">
+        <form method="post" name="formulario2" action="">
+            <label>
+                <h2>
+                    Ejercicio 2:
+                    <br>
+                    Calcular el sueldo total de un vendedor tomando en cuenta sueldo base y comisiones.
+                </h2>
+            </label>
+            <table>
+                <tr>
+                    <td>Introduce tu sueldo base: </td>
+                    <td><input type="text" name="sueldo" onkeypress="return validar(event)"></td>
+                </tr>
+                <tr>
+                    <td>Introduce cantidad de dinero por total de ventas: </td>
+                    <td><input type="text" name="ventas"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" value="Calcular Comision" onclick="comision()"></td>
+                </tr>
+                <tr>
+                    <td>Comision: </td>
+                    <td><input type="text" name="comi" readonly="readonly" class="input_text"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" value="Calcular Sueldo Total" name="sueldot" onclick=""></td>
+                </tr>
+                <tr>
+                    <td>Sueldo Total: </td>
+                    <td><input type="text" name="sueldototal"></td>
+                </tr>
+            </table>
         </form>
     </div>
     <script src="JavaScript/script.js"></script>
