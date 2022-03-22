@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+body{
+    background-image: url(../Imagen/FondoMario.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@keyframes animacion{
+    from{
+        background-color: rgba(0, 255, 255, 0.315);
+    }
+    to{
+        background-color: rgba(0, 255, 42, 0.603);
+    }
+}
+
+.f1{
+    border: 5px solid #0deeb6;
+    border-radius: 25px;
+    margin: 3rem;
+    background-color: rgba(0, 255, 255, 0.315);
+    animation: animacion 4s alternate infinite;
+}
+
+.f2{
+    border: 5px solid #0deeb6;
+    border-radius: 25px;
+    margin: 3rem;
+    background-color: rgba(0, 255, 255, 0.315);
+    animation: animacion 4s alternate infinite;
+}
+
+.f3{
+    border: 5px solid #0deeb6;
+    border-radius: 25px;
+    margin: 3rem;
+    background-color: rgba(0, 255, 255, 0.315);
+    animation: animacion 4s alternate infinite;
+}
+
+.f4{
+    border: 5px solid #0deeb6;
+    border-radius: 25px;
+    margin: 3rem;
+    background-color: rgba(0, 255, 255, 0.315);
+    animation: animacion 4s alternate infinite;
+}
+
+.f5{
+    border: 5px solid #0deeb6;
+    border-radius: 25px;
+    margin: 3rem;
+    background-color: rgba(0, 255, 255, 0.315);
+    animation: animacion 4s alternate infinite;
+}
+
+.f6{
+    border: 5px solid #0deeb6;
+    border-radius: 25px;
+    margin: 3rem;
+    background-color: rgba(0, 255, 255, 0.315);
+    animation: animacion 4s alternate infinite;
+}

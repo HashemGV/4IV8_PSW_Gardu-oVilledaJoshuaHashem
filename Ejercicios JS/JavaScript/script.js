@@ -32,6 +32,13 @@ function borrard(){
     document.formulario5.nalumnosm.value="";
     document.formulario5.alumnosh.value="";
     document.formulario5.alumnosm.value="";
+    document.formulario6.añon.value="";
+    document.formulario6.añoa.value="";
+    document.formulario6.mesn.value="";
+    document.formulario6.mesa.value="";
+    document.formulario6.dian.value="";
+    document.formulario6.diaa.value="";
+    document.formulario6.edad.value="";
 }
 
 function comision(){
@@ -86,11 +93,28 @@ function alumnos(){
     document.formulario5.alumnosm.value=porcalumnm+"%";
 }
 
-function edad(){
+function calculoEdad(){
     var vañon=document.formulario6.añon.value;
     var añon=parseInt(vañon);
     var vañoa=document.formulario6.añoa.value;
     var añoa=parseInt(vañoa);
-    var vedad=añoa-añon;
-    document.formulario6.edad.value=vedad+"años";
+    var vmesn=document.formulario6.mesn.value;
+    var mesn=parseInt(vmesn);
+    var vmesa=document.formulario6.mesa.value;
+    var mesa=parseInt(vmesa);
+    var vdian=document.formulario6.dian.value;
+    var dian=parseInt(vdian);
+    var vdiaa=document.formulario6.diaa.value;
+    var diaa=parseInt(vdiaa);
+    var emayor=añoa-añon;
+    var emenor=emayor-1;
+
+    if(mesn<mesa)
+        document.formulario6.edad.value=emayor+" años";
+    else if(mesn>mesa)
+        document.formulario6.edad.value=emenor+" años";
+    else if(dian<diaa)
+        document.formulario6.edad.value=emayor+" años";
+    else(dian>diaa)
+        document.formulario6.edad.value=emenor+" años";
 }
