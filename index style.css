@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+body{
+    background-image: url(KirbyRD10th.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@keyframes animacion{
+    from{
+        background-color: rgb(182, 238, 252);
+    }
+    to{
+        background-color: rgba(182, 238, 252, 0.062);
+    }
+}
+
+nav{
+    border: 3px solid #aafa91;
+    border-radius: 20px;
+    margin: 3rem;
+    background-color: rgb(182, 238, 252);
+    box-shadow: 5px 5px 30px #78fcdfda;
+    animation: animacion 5s alternate infinite;
+}
+
+table{
+    border: 2px solid black;
+    width: 500px;
+    margin: auto;
+    background-color: rgb(182, 238, 252);
+    align-items: center;
+    animation: animacion 5s alternate infinite;
+}
+
+td{
+    border: 1px solid black;
+    text-align: justify;
+    animation: animacion 5s alternate infinite;
+}
