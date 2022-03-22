@@ -50,7 +50,7 @@
                 </tr>
                 <tr>
                     <td>Introduce cantidad de dinero por total de ventas: </td>
-                    <td><input type="text" name="ventas"></td>
+                    <td><input type="text" name="ventas" onkeypress="return validar(event)"></td>
                 </tr>
                 <tr>
                     <td></td>
@@ -62,11 +62,171 @@
                 </tr>
                 <tr>
                     <td></td>
-                    <td><input type="button" value="Calcular Sueldo Total" name="sueldot" onclick=""></td>
+                    <td><input type="button" value="Calcular Sueldo Total" onclick="sueldoT()"></td>
                 </tr>
                 <tr>
                     <td>Sueldo Total: </td>
-                    <td><input type="text" name="sueldototal"></td>
+                    <td><input type="text" name="sueldototal" readonly="readonly" class="input_text"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" value="Borrar Datos" name="borrar" onclick="borrard()"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div class="f3">
+        <form method="post" name="formulario3" action="">
+            <label>
+                <h2>
+                    Ejercicio 3:
+                    <br>
+                    Calcular el 15% de despuento por el total de una compra.
+                </h2>
+            </label>
+            <table>
+                <tr>
+                    <td>Introduce el precio de la compra sin descuento: </td>
+                    <td> <input type="text" name="precio" onkeypress="return validar(event)"> </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td> <input type="button" value="Calcular Descuento" onclick="descuento()"> </td>
+                </tr>
+                <tr>
+                    <td>Su precio total a pagar es de: </td>
+                    <td> <input type="text" name="descuentop" id="cantidadI" readonly="readonly" class="input_text"> </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" value="Borrar Datos" name="borrar" onclick="borrard()"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div class="f4">
+        <form method="post" name="formulario4" action="">
+            <label>
+                <h2>
+                    Ejercicio 4:
+                    <br>
+                    Calcular el 15% de despuento por el total de una compra.
+                </h2>
+            </label>
+            <table>
+                <tr>
+                    <td>Introduce el promedio de tus 3 calificaciones parciales: </td>
+                    <td><input type="text" name="promedio" onkeypress="return validar(event)"></td>
+                </tr>
+                <tr>
+                    <td>Introduce la calificacion del examen final: </td>
+                    <td><input type="text" name="examenf" onkeypress="return validar(event)"></td>
+                </tr>
+                <tr>
+                    <td>Introduce la calificacion del trabajo final </td>
+                    <td><input type="text" name="trabajof" onkeypress="return validar(event)"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td> <input type="button" value="Calificacion Final" onclick="calificacion()"> </td>
+                </tr>
+                <tr>
+                    <td>Tu calificacion final es: </td>
+                    <td> <input type="text" name="califf" id="cantidadI" readonly="readonly" class="input_text"> </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" value="Borrar Datos" name="borrar" onclick="borrard()"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div class="f5">
+        <form method="post" name="formulario5" action="">
+            <label>
+                <h2>
+                    Ejercicio 5:
+                    <br>
+                    Calcular el porcentaje de alumnos y alumnas en un salon.
+                </h2>
+            </label>
+            <table>
+                <tr>
+                    <td>Numero total de alumnos: </td>
+                    <td><input type="text" name="talumnos" onkeypress="return validar(event)"></td>
+                </tr>
+                <tr>
+                    <td>Numero de alumnos hombres: </td>
+                    <td><input type="text" name="nalumnosh" onkeypress="return validar(event)"></td>
+                </tr>
+                <tr>
+                    <td>Numero de alumnas mujeres: </td>
+                    <td><input type="text" name="nalumnosm" onkeypress="return validar(event)"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td> <input type="button" value="Calcular Porcentajes" onclick="alumnos()"> </td>
+                </tr>
+                <tr>
+                    <td>Porcentaje de alumnos hombres: </td>
+                    <td> <input type="text" name="alumnosh" id="cantidadI" readonly="readonly" class="input_text"> </td>
+                </tr>
+                <tr>
+                    <td>Porcentaje de alumnas mujeres: </td>
+                    <td> <input type="text" name="alumnosm" id="cantidadI" readonly="readonly" class="input_text"> </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" value="Borrar Datos" name="borrar" onclick="borrard()"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div class="f6">
+        <form method="post" name="formulario6" action="">
+            <label>
+                <h2>
+                    Ejercicio 6:
+                    <br>
+                    Calcular la edad de una persona.
+                </h2>
+            </label>
+            <table>
+                <tr>
+                    <td>Introduce tu año de nacimiento:</td>
+                    <td> <input type="text" name="añon" onkeypress="return validar(event)"> </td>
+                </tr>
+                <tr>
+                    <td>Introduce el año actual:</td>
+                    <td> <input type="text" name="añoa" onkeypress="return validar(event)"> </td>
+                </tr>
+                <tr>
+                    <td>Introduce el numero de tu mes de nacimiento: </td>
+                    <td> <input type="text" name="mesn" onkeypress="return validar(event)"> </td>
+                </tr>
+                <tr>
+                    <td>Introduce el numero del mes actual: </td>
+                    <td> <input type="text" name="mesa" onkeypress="return validar(event)"> </td>
+                </tr>
+                <tr>
+                    <td>Introduce tu dia de nacimiento: </td>
+                    <td> <input type="text" name="dian" onkeypress="return validar(event)"> </td>
+                </tr>
+                <tr>
+                    <td>Introduce el dia actual: </td>
+                    <td> <input type="text" name="diaa" onkeypress="return validar(event)"> </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td> <input type="button" value="Calcular Edad" onclick="edad()"> </td>
+                </tr>
+                <tr>
+                    <td>Esta es tu edad: </td>
+                    <td> <input type="text" name="edad" id="cantidadI" readonly="readonly" class="input_text"> </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" value="Borrar Datos" name="borrar" onclick="borrard()"></td>
                 </tr>
             </table>
         </form>
