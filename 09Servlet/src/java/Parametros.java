@@ -30,17 +30,48 @@ public class Parametros extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try ( PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-            
             String nombre="";
+            String correo="";
+            int telefono=0;
+            
+            //IP
+            int puerto;
+            String nombremaquina, ip, ip2, host;
+            
             //vamos a obtener el parametro
             nombre=request.getParameter("nombre");
+            telefono=Integer.parseInt(request.getParameter("telefono"));
+            correo=request.getParameter("correo");
+            
+            ip=request.getLocalAddr();
+            nombremaquina=request.getLocalName();
+            puerto=request.getLocalPort();
+            ip2=request.getRemoteAddr();
+            host=request.getRemoteHost();
+            
+            
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
             out.println("<title>Servlet Parametros</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Hola Mundo, tu nombre es : "+nombre+"</h1>"
+            out.println("<h1>Hola Mundo, tu nombre es : "+nombre
+                    +"</h1>"
+                    +"<br>"
+                    +"<h1>Tu Telefono es: "+telefono+"</h1>"
+                    +"<br>"
+                    +"<h1>Tu Correo es: "+correo+"</h1>"
+                    +"<br>"
+                    +"<h1>IP Local es: "+ip+"</h1>"
+                    +"<br>"
+                    +"<h1>Nombre Local Maq es: "+nombremaquina+"</h1>"
+                    +"<br>"
+                    +"<h1>IP Remota es: "+ip2+"</h1>"
+                    +"<br>"
+                    +"<h1>Host Remoto es: "+host+"</h1>"
+                    +"<br>"
+                    +"<h1>Puerto: "+puerto+"</h1>"
                     + "<a href='index.html'>Regresar a principal</a>");
             out.println("</body>");
             out.println("</html>");
