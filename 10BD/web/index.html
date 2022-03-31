@@ -11,10 +11,49 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div class="container">
-            <h1>Consulta de Alumnos</h1>
+        <div class="container" >
+            <h1>Consulta de Alumnos de Batiz</h1>
             <br>
             <a href="ConsultarAlumnos">Consultar Lista</a>
+        </div>
+        <div class="registro" >
+            <br>
+            <form name="formulario" method="post" action="RegistrarAlumnos" >
+                <label>Nombre</label>
+                <br>
+                <input type="text" name="nombre" id="nombre"  >
+                <br>
+                <label>Apellido Paterno</label>
+                <br>
+                <input type="text" name="appat" id="appat"  >
+                <br>
+                <label>Apellido Materno</label>
+                <br>
+                <input type="text" name="apmat" id="apmat"  >
+                <br>
+                <label>Boleta</label>
+                <br>
+                <input type="text" name="boleta" id="boleta"  >
+                <br>
+                <label>Telefono</label>
+                <br>
+                <input type="text" name="telefono" id="telefono"  >
+                <br>
+                <input type="submit" value="Registrar Nuevo Alumno" >
+                <br>
+                <input type="reset" value="Borrar Datos" >
+            </form>
+        </div>
+        <div class="eliminar" >
+            <form method="get" action="EliminarAlumno" name="elimina" >
+                <br>
+                <label>Ingrese la Boleta para dar de baja a un alumno</label>
+                <br>
+                <input type="text" name="boletaelimina" >
+                <br>
+                <input type="submit" value="Dar de Baja" >
+            </form>
+            
         </div>
     </body>
 </html>

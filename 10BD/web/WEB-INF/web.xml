@@ -4,9 +4,41 @@
         <servlet-name>ConsultarAlumnos</servlet-name>
         <servlet-class>ConsultarAlumnos</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>RegistrarAlumnos</servlet-name>
+        <servlet-class>RegistrarAlumnos</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EliminarAlumno</servlet-name>
+        <servlet-class>EliminarAlumno</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RegistrarAlumno</servlet-name>
+        <servlet-class>RegistrarAlumno</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EliminarAlumnos</servlet-name>
+        <servlet-class>EliminarAlumnos</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ConsultarAlumnos</servlet-name>
         <url-pattern>/ConsultarAlumnos</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RegistrarAlumnos</servlet-name>
+        <url-pattern>/RegistrarAlumnos</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EliminarAlumno</servlet-name>
+        <url-pattern>/EliminarAlumno</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RegistrarAlumno</servlet-name>
+        <url-pattern>/RegistrarAlumno</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EliminarAlumnos</servlet-name>
+        <url-pattern>/EliminarAlumnos</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
