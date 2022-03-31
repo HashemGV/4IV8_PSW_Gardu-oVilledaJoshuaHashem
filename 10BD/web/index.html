@@ -9,6 +9,7 @@ and open the template in the editor.
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/style.css">
     </head>
     <body>
         <div class="container" >
@@ -33,11 +34,11 @@ and open the template in the editor.
                 <br>
                 <label>Boleta</label>
                 <br>
-                <input type="text" name="boleta" id="boleta"  >
+                <input type="text" name="boleta" id="boleta" onkeypress="return validar(event)">
                 <br>
                 <label>Telefono</label>
                 <br>
-                <input type="text" name="telefono" id="telefono"  >
+                <input type="text" name="telefono" id="telefono" onkeypress="return validar(event)">
                 <br>
                 <input type="submit" value="Registrar Nuevo Alumno" >
                 <br>
@@ -49,11 +50,12 @@ and open the template in the editor.
                 <br>
                 <label>Ingrese la Boleta para dar de baja a un alumno</label>
                 <br>
-                <input type="text" name="boletaelimina" >
+                <input type="text" name="boletaelimina" onkeypress="return validar(event)">
                 <br>
                 <input type="submit" value="Dar de Baja" >
             </form>
             
         </div>
+        <script src="JS/validacion.js"></script>
     </body>
 </html>

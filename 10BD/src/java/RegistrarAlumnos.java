@@ -121,7 +121,7 @@ public class RegistrarAlumnos extends HttpServlet {
                 System.out.println(tel);
                 System.out.println(boleta);
                 
-                String q = "insert into alumnobatiz "
+                String q = "update alumnobatiz "
                         + "values ("+boleta+", '"+nom+"', '"+appat+"', '"+apmat+"', '"+tel+"')";
                 
                 //se debe de preparar ejecutar la sentencia
@@ -137,10 +137,7 @@ public class RegistrarAlumnos extends HttpServlet {
                 System.out.println(e.getStackTrace());
                 out.println("<h1>Alumno No se pudo Registrar, hay un error</h1>");
             
-            }
-            
-            
-            
+            }          
             
             out.println("<a href='ConsultarAlumnos' >Consultar Alumnos</a>");
             out.println("</body>");
