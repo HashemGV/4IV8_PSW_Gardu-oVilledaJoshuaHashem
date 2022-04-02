@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+    <body>
+        <div class="container" >
+            <h1>Consulta de Alumnos de Batiz</h1>
+            <br>
+            <a href="ConsultarAlumnos">Consultar Lista</a>
+        </div>
+        <div class="registro" >
+            <br>
+            <form name="formulario" method="post" action="RegistrarAlumnos" >
+                <label>Nombre</label>
+                <br>
+                <input type="text" name="nombre" id="nombre" onkeypress="return letras(event)" >
+                <br>
+                <label>Apellido Paterno</label>
+                <br>
+                <input type="text" name="appat" id="appat" onkeypress="return letras(event)" >
+                <br>
+                <label>Apellido Materno</label>
+                <br>
+                <input type="text" name="apmat" id="apmat" onkeypress="return letras(event)" >
+                <br>
+                <label>Boleta</label>
+                <br>
+                <input type="text" name="boleta" id="boleta" onkeypress="return validar(event)">
+                <br>
+                <label>Telefono</label>
+                <br>
+                <input type="text" name="telefono" id="telefono" onkeypress="return validar(event)">
+                <br>
+                <input type="submit" value="Registrar Nuevo Alumno" >
+                <br>
+                <input type="reset" value="Borrar Datos" >
+            </form>
+        </div>
+        <div class="eliminar" >
+            <form method="get" action="EliminarAlumno" name="elimina" >
+                <br>
+                <label>Ingrese la Boleta para dar de baja a un alumno</label>
+                <br>
+                <input type="text" name="boletaelimina" onkeypress="return validar(event)">
+                <br>
+                <input type="submit" value="Dar de Baja" >
+            </form>
+            
+        </div>
+        <script src="JS/validacion.js"></script>
+    </body>
+</html>
