@@ -120,8 +120,8 @@ public class RegistrarAlumnos extends HttpServlet {
                 System.out.println(apmat);
                 System.out.println(tel);
                 System.out.println(boleta);
-                
-                String q = "update alumnobatiz "
+                    
+                String q = "insert into alumnobatiz "
                         + "values ("+boleta+", '"+nom+"', '"+appat+"', '"+apmat+"', '"+tel+"')";
                 
                 //se debe de preparar ejecutar la sentencia

@@ -43,3 +43,8 @@ td{
     text-align: justify;
     animation: animacion 5s alternate infinite;
 }
+
+th{
+    text-align: center;
+    animation: animacion 5s alternate infinite;
+}

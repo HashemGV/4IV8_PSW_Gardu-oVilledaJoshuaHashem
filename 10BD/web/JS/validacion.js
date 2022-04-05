@@ -6,7 +6,7 @@ function validar(e){
     return patron.test(probar);
 }
 
- function letras(e){
+ function campos(){
     var nom=document.formulario.nombre.value;
     var appat=document.formulario.appat.value;
     var apmat=document.formulario.apmat.value;
@@ -15,9 +15,14 @@ function validar(e){
     if((nom=="")||(appat=="")||(apmat=="")||(bol=="")||(tel=="")){
         alert("Debes llenar todos los campos")
     }
-    else if (!str.search("/[A-Z][a-z]+\s/",nom)&&!str.search("/[A-Z][a-z]+\s/",appat)&&
-    !str.search("/[A-Z][a-z]+\s/",apmat)&&!str.search("\d\d\d\d\d\d\d\d\d\d",bol)&&
-    !str.search("\d\d\d\d\d\d\d\d\d\d",tel)){
+}
+
+function validard(){
+    var nom=document.formulario.nombre.value;
+    var appat=document.formulario.appat.value;
+    var apmat=document.formulario.apmat.value;
+    if (!str.search("/[A-Z][a-z]+\s/",nom)&&!str.search("/[A-Z][a-z]+\s/",appat)&&
+    !str.search("/[A-Z][a-z]+\s/",apmat)){
         alert("Datos invalidos")
     }
- }
+}

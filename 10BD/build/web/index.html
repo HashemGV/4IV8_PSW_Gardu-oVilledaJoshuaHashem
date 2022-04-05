@@ -22,15 +22,15 @@ and open the template in the editor.
             <form name="formulario" method="post" action="RegistrarAlumnos" >
                 <label>Nombre</label>
                 <br>
-                <input type="text" name="nombre" id="nombre" onkeypress="return letras(event)" >
+                <input type="text" name="nombre" id="nombre">
                 <br>
                 <label>Apellido Paterno</label>
                 <br>
-                <input type="text" name="appat" id="appat" onkeypress="return letras(event)" >
+                <input type="text" name="appat" id="appat">
                 <br>
                 <label>Apellido Materno</label>
                 <br>
-                <input type="text" name="apmat" id="apmat" onkeypress="return letras(event)" >
+                <input type="text" name="apmat" id="apmat">
                 <br>
                 <label>Boleta</label>
                 <br>
@@ -40,7 +40,7 @@ and open the template in the editor.
                 <br>
                 <input type="text" name="telefono" id="telefono" onkeypress="return validar(event)">
                 <br>
-                <input type="submit" value="Registrar Nuevo Alumno" >
+                <input type="submit" value="Registrar Nuevo Alumno" onclick="validard()">
                 <br>
                 <input type="reset" value="Borrar Datos" >
             </form>
@@ -54,7 +54,34 @@ and open the template in the editor.
                 <br>
                 <input type="submit" value="Dar de Baja" >
             </form>
-            
+        </div>
+        <div class="actualizar">
+            <form method="post" name="modificar" action="EditarAlumno" >
+                <label>Ingresa los datos que quieres actualizar</label>
+                <label> Boleta</label>
+                <br>
+                <input type="text" name="boleta"  >
+                <br>
+                <label> Nombre del alumno </label>
+                <br>
+                <input type="text" name="nombre"  >
+                <br>
+                <label> Apellido Paterno </label>
+                <br>
+                <input type="text" name="appat"  >
+                <br>
+                <label> Apellido Materno </label>
+                <br>
+                <input type="text" name="apmat"  >
+                <br>
+                <label> Telefono </label>
+                <br>
+                <input type="text" name="tel"  >
+                <br>
+                <input type="submit" value="Actualizar Datos" name="enviar" >
+                <br>
+                <input type="reset" value="Borrar Datos" >
+            </form>
         </div>
         <script src="JS/validacion.js"></script>
     </body>

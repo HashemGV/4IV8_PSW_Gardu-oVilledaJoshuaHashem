@@ -20,6 +20,10 @@
         <servlet-name>EliminarAlumnos</servlet-name>
         <servlet-class>EliminarAlumnos</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ActualizarAlumnos</servlet-name>
+        <servlet-class>ActualizarAlumnos</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ConsultarAlumnos</servlet-name>
         <url-pattern>/ConsultarAlumnos</url-pattern>
@@ -39,6 +43,10 @@
     <servlet-mapping>
         <servlet-name>EliminarAlumnos</servlet-name>
         <url-pattern>/EliminarAlumnos</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ActualizarAlumnos</servlet-name>
+        <url-pattern>/ActualizarAlumnos</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
