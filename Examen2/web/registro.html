@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="two">
+            <form action="registro.jsp" method="POST" class="registro">
+                <h5 class="title">Registrarse.</h5>
+                <h6>
+                    Coloca en los recuadros correspondientes los datos que se te piden para poder crear tu cuenta.
+                    En el recuadro de sexo poner una M para Masculino y una F para Femenino
+                    Se recomienda que la contraseña tenga caracteres como números y símbolos, y que no sean fechas de cumpleaños ni nombres de mascotas, etc. para mayor seguridad
+                    En el apartado de foto, solo el docente debe subir su foto, si eres alumno, porfavor no subas ningun archivo
+                </h6>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre(s)" class="campos" onkeypress="return validarn(event)">
+                <input type="text" name="appat" id="appat" placeholder="Apellido Paterno" class="campos" onkeypress="return validarn(event)">
+                <input type="text" name="apmat" id="ampat" placeholder="Apellido Materno" class="campos" onkeypress="return validarn(event)">
+                <input type="text" name="matricula" id="matricula" placeholder="Matricula (Docentes)" class="campos">
+                <input type="text" name="sexo" id="sexo" placeholder="Sexo" class="campos">
+                <input type="date" name="fecha" id="fecha" placeholder="Fecha Nacimiento" class="campos">
+                <input type="text" name="user" id="user" placeholder="Usuario" class="campos">
+                <input type="text" name="pass" id="pass" placeholder="Contraseña" class="campos">
+                <input type="text" name="rol" id="rol" placeholder="Rol" class="campos">
+                <input type="text" name="privilegio" id="privilegio" placeholder="Privilegio" class="campos">
+                <input type="file" name="foto" id="foto" placeholder="Solo Docente" class="campos">
+                <button type="submit" name="registrar" id="registrar" class="boton">Registrarse</button>
+                <input type="reset" value="Borrar Datos" class="boton">
+            </form>
+        </div>
+        <div class="aycaramba">
+            <img src="../web/img/image.png">
+        </div>
+    </div>
+    <script src="../web/js/main.js"></script>
+</body>
+</html>

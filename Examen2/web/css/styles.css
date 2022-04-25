@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;500;700&family=Ubuntu:wght@300&display=swap');
+
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    background-image: radial-gradient(circle at 50% -20.71%, #ffffff 0, #ffffff 25%, #f8f8f9 50%, #dadcef 75%, #bac2e6 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+.papa, .two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-login, .two, .laboratorios, .formulario{
+    background: white;
+    width: 60%;
+    height: 100%;
+    margin-top: 6%;
+    box-shadow: 0 0.1em 0.1em rgba(0,0,0, 0.5);
+    padding: 2%;
+}
+
+.titulo, .registro, .texto{
+    font-size: 20px;
+    text-shadow: gray 0.1em 0.1em 0.2em;
+    text-align: center;
+}
+
+.campos{
+    width: 100%;
+    height: 2em;
+    border: none;
+    border-bottom: 1px solid #7d96e8;
+    outline: none;
+    padding: 5px;
+    margin-bottom: 1em;
+}
+
+.campos:hover{
+    border-bottom: 1px solid #181717;
+}
+
+.boton{
+    background-color: #7d96e8;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    float: right;
+}
+
+.boton:hover{
+    background-color: #647bc5;
+}
+
+.textoregistro, .textoreporte, .textoeditar, .textoconsultar{
+    text-align: center;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Examen2</title>
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+    <body>
+        <div class="papa">
+            <form action="sesion.jsp" method="POST" class="form-login">   
+                <h5 class="titulo">Iniciar sesión como alumno o docente.</h5>
+                <input type="text" name="Usuario" id="user" placeholder="Usuario" class="campos">
+                <input type="password" name="Contraseña" id="pass" placeholder="Contraseña" class="campos">
+                <button type="submit" class="boton">Iniciar sesión</button>
+                <p class="textoregistro"><a href="../web/registro.html">Registrase como alumno o docente nuevo.</a></p>
+                <p class="textoreporte"><a href="../web/reportes.html">Reportar un Equipo.</a></p>
+                <p class="textoeditar"><a href="../web/WEB-INF/editar.jsp">Editar Perfil</a></p>
+                <p class="textoconsultar"><a href="../web/WEB-INF/consultar.jsp">Consultar Perfil</a></p>
+            </form>
+        </div>
+    </body>
+</html>
