@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;500;700&family=Ubuntu:wght@300&display=swap');
+
+*{
+    font-family:  'Poppins', sans-serif;
+
+}
+
+body{
+    background-image: url(../img/fondo.jpg);
+    width: auto;
+    height: auto;
+    background-size: cover;
+    font-size: 14px;
+}
+
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.links{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    color: white;
+    margin: 45px; 
+}
+
+
+.nuevoequipo{
+    background-color: rgba(255, 255, 255, 0.699);
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    padding: 2%;   
+    margin: 8%; 
+}
+
+.nr{
+    background-color: rgba(1, 41, 102, 0.788);
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    padding: 2%;
+    padding-left: 5%;   
+    color: white;
+    margin: 45px; 
+}
+.nc, .nini{
+    background-color: rgba(255, 255, 255, 0.699);
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    padding: 2%;   
+    margin: 45px; 
+}
+
+.login{
+    width: auto;
+    background-color: rgba(255, 255, 255, 0.884);
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6%;
+    box-shadow: 0 0.1em 0.1em rgba(0,0,0, 0.5);
+    padding: 5%;
+}
+
+.ralumno{
+    background-color: rgba(255, 255, 255, 0.884);
+    width: auto;
+    height: auto;
+    margin-top: 6%;
+    box-shadow: 0 0.1em 0.1em rgba(0,0,0, 0.5);
+    padding: 5%;
+}
+
+
+
+.titulo{
+    text-shadow: gray 0.1em 0.1em 0.2em;
+    text-align: center;
+}
+
+.campos{
+    width: 100%;
+    height: 2em;
+    border: none;
+    border-bottom: 1px solid #7d96e8;
+    outline: none;
+    padding: 5px;
+    margin-bottom: 1em;
+    background-color: aliceblue;
+}
+
+.campos:hover{
+    border-bottom: 1px solid #181717;
+}
+
+.boton{
+    background-color: #3565ad;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    font-family:  'Poppins', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.boton:hover{
+    background-color: #647bc5;
+}
+
+
+
+
+.re{
+    color: black;
+}
+
+
+
+
+
+
+.tab {
+	width: 800px;
+	border-collapse: collapse;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.th {
+	padding: 15px;
+	background-color: #4160e7;
+	color: rgb(255, 255, 255);
+    text-align: left;
+}
+.td{
+    padding: 15px;
+	background-color: rgba(255, 255, 255, 0.973);
+	color: rgb(0, 0, 0);  
+}
+
+	

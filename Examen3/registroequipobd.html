@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Examen3/CSS/styles.css">
+    <script src="js/validacion.js"></script>
+    <title>Registrar Equipo en la BD</title>
+</head>
+<body>
+    <div class="formulario">
+        <form name="regbd" action="" method="post" class="ralumno">
+            <table>
+                <th><h1>Registrar Equipo en la BD</h1></th>
+                <tr>
+                    <td><p>Etiqueta:</p></td>
+                    <td><input type="text" name="etiqueta" id="etiqueta" placeholder="Etiqueta" class="campos"></td>
+                </tr>
+                <tr>
+                    <td><p>Laboratorio:</p></td>
+                    <td>
+                        <select name="lab" id="lab">
+                            <option value="2">LNT</option>
+                            <option value="1">LBD</option>
+                            <option value="3">LDS</option>
+                            <option value="4">4.0</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><p>Marca:</p></td>
+                    <td><input type="text" name="marca" id="marca" placeholder="Marca" class="campos"></td>
+                </tr>
+                </tr>
+                <tr> 
+                    <td><p>CPU:</p></td>
+                    <td><input type="text" name="cpu" id="cpu" placeholder="CPU" class="campos"></td>
+                </tr>
+                <tr> 
+                    <td><p>Descripcion del CPU:</p></td>
+                    <td><input type="text" name="desccpu" id="desccpu" placeholder="Descripción del CPU" class="campos"></td>
+                </tr>
+                <tr> 
+                    <td><p>Descripcion del Teclado:</p></td>
+                    <td><input type="text" name="desctec" id="desctec" placeholder="Descripción del Teclado" class="campos"></td>
+                </tr>
+                <tr> 
+                    <td><p>Descripcion del Mouse:</p></td>
+                    <td><input type="text" name="descmou" id="descmou" placeholder="Descripción del Mouse" class="campos"></td>
+                </tr>
+                
+                <tr>
+                    <td><p>Descripcion del Monitor:</p></td>
+                    <td><input type="text" name="descmon" id="descmon" placeholder="Descripción del Monitor" class="campos" class="campos"></td>
+                </tr>
+                <tr>
+                    <td><p>Descripcion de la Configuración:</p></td>
+                    <td><input type="text" name="desccon" id="desccon" placeholder="Descripción de la Configuración" class="campos" class="campos"></td>
+                </tr>
+                <tr>
+                    <td><p>Estado:</p></td>
+                    <td>
+                        <select name="lab" id="lab">
+                            <option value="1">Bien</option>
+                            <option value="2">Mal</option>
+                            <option value="3">Almacen</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><p>Problema:</p></td>
+                    <td><input type="text" name="prob" id="prob" placeholder="Problema" class="campos" class="campos"></td>
+                </tr>
+                <tr>
+                    <td><button type="submit" class="boton">Registrar</button></td>
+                
+                    <td><a class="boton" href="../Examen3/iniciodocente.html">Regresar</a></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+</body>
+</html>

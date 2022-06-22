@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Examen3/CSS/styles.css">
+    <script src="js/validacion.js"></script>
+    <title>Reportar Equipo</title>
+</head>
+<body>
+    <div class="formulario">
+        <form name="repor" action="" method="post" class="ralumno" onsubmit="return validarReporte(this)" >
+            <table>
+                <th><h1>Reportar Equipo</h1></th>
+                <tr>
+                    <td><p>Etiqueta:</p></td>
+                    <td><input type="text" name="etiqueta" id="etiqueta" placeholder="Etiqueta" class="campos"></td>
+                </tr>
+                <tr>
+                    <td><p>Responsable:</p></td>
+                    <td><input type="text" name="reso" id="resp" placeholder="Responsable" class="campos"></td>
+                </tr>
+                <tr> 
+                    <td><p>Prioridad</p></td>
+                    <td>
+                        <select name="prio" id="prio">
+                            <option value="1">Alta</option>
+                            <option value="2">Media</option>
+                            <option value="3">Baja</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr> 
+                    <td><p>Estado de reporte</p></td>
+                    <td>
+                        <select name="prio" id="prio">
+                            <option value="1">En espera</option>
+                            <option value="2">Atendiendo</option>
+                            <option value="3">Solucionado</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><p>Asignatura:</p></td>
+                    <td>
+                    <select name="asignatura" id="asignatura">
+                            <option value="3">Base de Datos</option>
+                            <option value="1">Programación y Servicios Web</option>
+                            <option value="2">Laboratorio de Proyectos de Tecnologias de la Informacion II</option>
+                            <option value="4">Técnicas de Programación Personal con Calidad</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><p>Fecha de Reporte:</p></td>
+                    <td><input type="date" name="fecha" id="fecha" placeholder="Fecha de reporte" class="campos"></td>
+                </tr>
+                <tr>
+                    <td><p>Hora:</p></td>
+                    <td><input type="time" name="hora" id="hora" placeholder="Hora de reporte" class="campos"></td>
+                    
+                </tr>
+                <tr>
+                    <td><p>Descripcion del reporte</p></td>
+                    <td><input type="text" name="desc" id="desc" class="campos"></td>
+                </tr>
+                <tr>
+                    <td><button type="submit" class="boton">Reportar</button></td>
+                
+                    <td><a class="boton" href="../Examen3/iniciodocente.html">Regresar</a></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+</body>
+</html>
